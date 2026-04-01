@@ -1,4 +1,8 @@
 import { useState } from "react";
+import { FaCartArrowDown } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdCloseCircle } from "react-icons/io";
+
 
 function Navbar({ totalItems, setActiveTab }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +13,7 @@ function Navbar({ totalItems, setActiveTab }) {
 
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <h1 className="text-3xl font-bold text-purple-600 tracking-tight">DigiTools</h1>
+          <h1 className="text-3xl font-bold cursor-pointer text-purple-600 tracking-tight">DigiTools</h1>
         </div>
 
         {/* Desktop Menu */}
@@ -25,12 +29,12 @@ function Navbar({ totalItems, setActiveTab }) {
         <div className="hidden md:flex items-center gap-4">
           <button
             onClick={() => setActiveTab("cart")}
-            className="flex items-center gap-2 text-gray-700 hover:text-gray-900 font-medium px-4 py-2 transition-colors"
+            className="flex items-center gap-2 text-gray-700 cursor-pointer hover:text-gray-900 font-medium px-4 py-2 transition-colors"
           >
-            Cart ({totalItems})
+            <FaCartArrowDown /> ({totalItems})
           </button>
 
-          <button className="flex items-center gap-2 text-gray-700 hover:text-gray-900 font-medium px-4 py-2 transition-colors">
+          <button className="flex items-center cursor-pointer gap-2 text-gray-700 hover:text-gray-900 font-medium px-4 py-2 transition-colors">
             Login
           </button>
 
@@ -42,7 +46,7 @@ function Navbar({ totalItems, setActiveTab }) {
         {/* Mobile Hamburger */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-[16px] font-bold text-gray-800 bg-gray-100 px-3 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer">
-            {isOpen ? "CLOSE" : "MENU"}
+            {isOpen ? <IoMdCloseCircle /> : <GiHamburgerMenu />}
           </button>
         </div>
       </div>
