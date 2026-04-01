@@ -1,3 +1,7 @@
+import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 function Footer() {
   return (
     <footer>
@@ -11,10 +15,10 @@ function Footer() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn bg-white text-purple-700 hover:bg-gray-100 font-semibold px-8 py-3 rounded-full text-lg">
+            <button className="btn border-0 bg-white text-purple-700 hover:bg-gray-100 font-semibold px-3 py-6 rounded-full text-lg">
               Explore Products
             </button>
-            <button className="btn border-2 border-white hover:bg-white hover:text-purple-700 font-semibold px-8 py-3 rounded-full text-lg">
+            <button className="btn border-white hover:bg-white bg-transparent hover:text-purple-700 font-semibold px-5 py-6 rounded-full text-lg">
               View Pricing
             </button>
           </div>
@@ -31,7 +35,6 @@ function Footer() {
           <div className="grid md:grid-cols-12 gap-10">
             <div className="md:col-span-4">
               <div className="flex items-center gap-3 mb-6">
-                <span className="text-4xl">🚀</span>
                 <h2 className="text-3xl font-bold">DigiTools</h2>
               </div>
               <p className="text-gray-400 leading-relaxed max-w-xs">
@@ -73,15 +76,15 @@ function Footer() {
             <div className="md:col-span-2">
               <h3 className="font-semibold mb-5 text-gray-300">Social Links</h3>
               <div className="flex gap-4">
-                <div className="w-9 h-9 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center cursor-pointer transition-colors">📘</div>
-                <div className="w-9 h-9 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center cursor-pointer transition-colors">📷</div>
-                <div className="w-9 h-9 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center cursor-pointer transition-colors">𝕏</div>
+                <div className="w-9 h-9 text-[#101727] bg-white hover:bg-gray-700 hover:text-white rounded-full flex items-center justify-center cursor-pointer transition-colors"> <AiFillInstagram className="h-6 w-6"/> </div>
+                <div className="w-9 h-9 bg-white text-[#101727] hover:bg-gray-700 hover:text-white rounded-full flex items-center justify-center cursor-pointer transition-colors"> <FaFacebook className="w-6 h-6"/> </div>
+                <div className="w-9 h-9 text-[#101727] bg-white hover:bg-gray-700 hover:text-white rounded-full flex items-center justify-center cursor-pointer transition-colors"> <FaXTwitter className="h-6 w-6"/> </div>
               </div>
             </div>
           </div>
 
           <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-            <p>© 2026 DigiTools. All rights reserved.</p>
+            <p>© 2026 Digitools. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-gray-400">Privacy Policy</a>
               <a href="#" className="hover:text-gray-400">Terms of Service</a>
