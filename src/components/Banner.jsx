@@ -15,7 +15,11 @@ function Banner() {
             Supercharge Your<br className="hidden sm:block" />Digital Workflow
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-[#627382] opacity-90 mb-6 sm:mb-8 max-w-lg mx-auto md:mx-0">
-            Premium digital tools to boost your productivity and creativity
+            Access premium AI tools, design assets, templates, and productivity
+            software—all in one place. Start creating faster today.
+
+            Explore Products
+
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
             <button className="btn btn-primary text-sm sm:text-base px-4 py-3 sm:py-4 rounded-full w-full sm:w-auto">Get Started Free</button>

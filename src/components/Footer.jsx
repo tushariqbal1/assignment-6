@@ -24,7 +24,7 @@ function Footer() {
           </div>
 
           <p className="text-sm mt-8 opacity-75">
-            14-day free trial • No credit card required • Cancel anytime
+           14-day free trial • No credit card required • Cancel anytime
           </p>
         </div>
       </div>
