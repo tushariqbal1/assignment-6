@@ -47,7 +47,7 @@ function CartSection({ cart, removeFromCart, proceedToCheckout, totalPrice }) {
                 {/* Remove Button er kaj korte hobe */}
                 <button
                   onClick={() => removeFromCart(item.id)}
-                  className="text-pink-500 cursor-pointer hover:text-pink-600 text-sm font-medium"
+                  className="cursor-pointer btn btn-secondary text-sm font-medium"
                 >
                   Remove
                 </button>
