@@ -43,7 +43,7 @@ function Navbar({ totalItems, setActiveTab }) {
           </button>
         </div>
 
-        {/* Mobile Hamburger */}
+        {/* add hamburger and close icon */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-[16px] font-bold text-gray-800 bg-gray-100 px-3 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer">
             {isOpen ? <IoMdCloseCircle /> : <GiHamburgerMenu />}
@@ -51,7 +51,7 @@ function Navbar({ totalItems, setActiveTab }) {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* small device e dekhabe */}
       {isOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-4 text-gray-700 font-medium">
           <a href="#" className="block hover:text-purple-600">Products</a>

@@ -7,7 +7,7 @@ function PricingSection() {
       </div>
 
       <div className="grid md:grid-cols-3 gap-8">
-        {/* Starter Plan */}
+        
         <div className="bg-white rounded-3xl p-8 border border-gray-200 hover:border-gray-300 transition-all">
           <h3 className="text-2xl font-semibold text-gray-900 mb-1">Starter</h3>
           <p className="text-gray-500 mb-6">Perfect for getting started</p>
@@ -26,7 +26,7 @@ function PricingSection() {
           </button>
         </div>
 
-        {/* Pro Plan - Popular */}
+        
         <div className="bg-gradient-to-br from-purple-600 to-violet-600 text-white rounded-3xl p-8 border-2 border-purple-400 relative scale-105 shadow-2xl">
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-900 text-xs font-bold px-6 py-1 rounded-full">
             Most Popular
@@ -50,7 +50,7 @@ function PricingSection() {
           </button>
         </div>
 
-        {/* Enterprise Plan */}
+        
         <div className="bg-white rounded-3xl p-8 border border-gray-200 hover:border-gray-300 transition-all">
           <h3 className="text-2xl font-semibold text-gray-900 mb-1">Enterprise</h3>
           <p className="text-gray-500 mb-6">For teams and businesses</p>
