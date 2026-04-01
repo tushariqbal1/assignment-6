@@ -43,7 +43,7 @@ function ProductCard({ product, addToCart }) {
 
         <button
           onClick={() => addToCart(product)}
-          className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-4 rounded-2xl transition-all duration-200 active:scale-95"
+          className="w-full bg-purple-600 hover:bg-purple-700 cursor-pointer text-white font-semibold py-4 rounded-2xl transition-all duration-200 active:scale-95"
         >
           Buy Now
         </button>
