@@ -7,7 +7,7 @@ function TabButtons({ activeTab, setActiveTab, totalItems }) {
           Premium Digital Tools
         </h2>
         <p className=" text-[#627382] max-w-2xl mx-auto text-lg">
-          Choose from our curated collection of premium digital products designed to boost your productivity and creativity.
+          Choose from our curated collection of premium digital products designed to boost your productivity and creativity.
         </p>
       </div>
       <div className="flex justify-center gap-4 mt-8 mb-12">
