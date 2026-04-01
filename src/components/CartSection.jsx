@@ -17,7 +17,7 @@ function CartSection({ cart, removeFromCart, proceedToCheckout, totalPrice }) {
         </div>
       ) : (
         <>
-          {/* Cart Items */}
+          {/* Cart er Item gula */}
           <h2 className="text-[#101727] text-2xl  font-bold mb-4">Your Cart</h2>
           <div className="space-y-4 mb-8 ">
             {cart.map((item) => (
@@ -26,7 +26,7 @@ function CartSection({ cart, removeFromCart, proceedToCheckout, totalPrice }) {
                 className="flex items-center shadow-xl gap-4 bg-gray-50 p-5 rounded-xl"
               >
 
-                {/* Icon */}
+                {/* Icon add korte hobe */}
                 <img
                   src={item.icon}
                   alt={item.name}
@@ -34,7 +34,7 @@ function CartSection({ cart, removeFromCart, proceedToCheckout, totalPrice }) {
                 />
 
 
-                {/* Info */}
+                {/* Info dekhate hobe */}
                 <div className="flex-1">
                   <h3 className="text-lg text-[#101727] font-semibold">
                     {item.name} Hey
@@ -44,7 +44,7 @@ function CartSection({ cart, removeFromCart, proceedToCheckout, totalPrice }) {
                   </p>
                 </div>
 
-                {/* Remove Button */}
+                {/* Remove Button er kaj korte hobe */}
                 <button
                   onClick={() => removeFromCart(item.id)}
                   className="text-pink-500 cursor-pointer hover:text-pink-600 text-sm font-medium"
@@ -55,7 +55,7 @@ function CartSection({ cart, removeFromCart, proceedToCheckout, totalPrice }) {
             ))}
           </div>
 
-          {/* Total Section */}
+          {/* Total Section + korte hobe */}
           <div className="bg-white p-6 rounded-2xl shadow-sm">
             <div className="flex justify-between text-xl font-semibold mb-4">
               <span className="text-[#627382]">Total:</span>
@@ -64,7 +64,7 @@ function CartSection({ cart, removeFromCart, proceedToCheckout, totalPrice }) {
               </span>
             </div>
 
-            {/* Checkout Button */}
+            {/*chackout btn ekhane */}
             <button
               onClick={proceedToCheckout}
               className="w-full py-4 rounded-full text-white font-semibold 

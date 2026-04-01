@@ -27,7 +27,7 @@ function App() {
 
   const products = productsData;
 
-  // ✅ Add to Cart
+  // Cart e add kora
   const addToCart = (product) => {
     if (cart.find(item => item.id === product.id)) {
       toast.info(
@@ -49,7 +49,7 @@ function App() {
     );
   };
 
-  // ✅ Remove from Cart
+  // Cart theke bad dewa
   const removeFromCart = (id) => {
     const product = cart.find(item => item.id === id);
     setCart(cart.filter(item => item.id !== id));
@@ -64,7 +64,7 @@ function App() {
     }
   };
 
-  // ✅ Checkout
+  // buy kora complete hoye gele
   const proceedToCheckout = () => {
     if (cart.length === 0) return;
 
@@ -123,7 +123,7 @@ function App() {
       <PricingSection />
       <Footer />
 
-      {/* ✅ Toast Container */}
+      {/* Toastity */}
       <ToastContainer
         position="top-right"
         autoClose={3000}

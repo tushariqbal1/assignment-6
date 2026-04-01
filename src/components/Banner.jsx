@@ -5,7 +5,12 @@ function Banner() {
     <div className="">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 grid md:grid-cols-2 gap-10 lg:gap-12 items-center">
         <div className="text-center md:text-left">
-          <span className="text-xs sm:text-sm uppercase tracking-widest">New: AI-Powered Tools Available</span>
+          <span class="bg-[#E1E7FF] px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full inline-flex items-center gap-2">
+            <img src="/src/assets2/Group 5.png" alt="" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+            <span class="text-[12px] sm:text-sm md:text-base font-medium uppercase tracking-widest bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+              New: AI-Powered Tools Available
+            </span>
+          </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#101727] font-bold leading-tight mb-4 sm:mb-6">
             Supercharge Your<br className="hidden sm:block" />Digital Workflow
           </h2>

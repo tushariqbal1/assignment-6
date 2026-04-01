@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 function Footer() {
   return (
     <footer>
-      {/* Top Purple Section */}
+      {/* footer er uporer vag  */}
       <div className="bg-gradient-to-r from-purple-600 to-violet-600 py-20 text-white">
         <div className="max-w-4xl mx-auto text-center px-6">
           <h2 className="text-4xl font-bold mb-4">Ready To Transform Your Workflow?</h2>
@@ -29,7 +29,7 @@ function Footer() {
         </div>
       </div>
 
-      {/* Main Footer */}
+      {/* footer main */}
       <div className="bg-[#0F172A] text-white pt-16 pb-10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-12 gap-10">
