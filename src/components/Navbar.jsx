@@ -41,7 +41,7 @@ function Navbar({ totalItems, setActiveTab }) {
 
         {/* Mobile Hamburger */}
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-[16px] font-bold text-gray-800 bg-gray-100 px-3 py-2 rounded-md hover:bg-gray-200 transition-colors">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-[16px] font-bold text-gray-800 bg-gray-100 px-3 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer">
             {isOpen ? "CLOSE" : "MENU"}
           </button>
         </div>
