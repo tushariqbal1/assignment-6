@@ -12,7 +12,7 @@ function PricingSection() {
           <h3 className="text-2xl font-semibold text-gray-900 mb-1">Starter</h3>
           <p className="text-gray-500 mb-6">Perfect for getting started</p>
           <div className="mb-8">
-            <span className="text-5xl font-bold">$0</span>
+            <span className="text-5xl text-green-400 font-bold">$0</span>
             <span className="text-gray-500">/Month</span>
           </div>
           <ul className="space-y-4 mb-10 text-gray-700">
@@ -55,7 +55,7 @@ function PricingSection() {
           <h3 className="text-2xl font-semibold text-gray-900 mb-1">Enterprise</h3>
           <p className="text-gray-500 mb-6">For teams and businesses</p>
           <div className="mb-8">
-            <span className="text-5xl font-bold">$99</span>
+            <span className="text-5xl text-green-400 font-bold">$99</span>
             <span className="text-gray-500">/Month</span>
           </div>
           <ul className="space-y-4 mb-10 text-gray-700">
