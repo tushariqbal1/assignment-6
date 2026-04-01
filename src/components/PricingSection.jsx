@@ -21,7 +21,7 @@ function PricingSection() {
             <li className="flex items-center gap-3"><span className="text-green-500">✓</span> Community support</li>
             <li className="flex items-center gap-3"><span className="text-green-500">✓</span> 1 project per month</li>
           </ul>
-          <button className="w-full py-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-2xl transition-all">
+          <button className="w-full py-4 cursor-pointer bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-2xl transition-all">
             Get Started Free
           </button>
         </div>
@@ -45,7 +45,7 @@ function PricingSection() {
             <li className="flex items-center gap-3"><span className="text-green-300">✓</span> Cloud sync</li>
             <li className="flex items-center gap-3"><span className="text-green-300">✓</span> Advanced analytics</li>
           </ul>
-          <button className="w-full py-4 bg-white text-purple-700 font-semibold rounded-2xl hover:bg-gray-100 transition-all">
+          <button className="w-full py-4 bg-white cursor-pointer text-purple-700 font-semibold rounded-2xl hover:bg-gray-100 transition-all">
             Start Pro Trial
           </button>
         </div>
@@ -66,7 +66,7 @@ function PricingSection() {
             <li className="flex items-center gap-3"><span className="text-green-500">✓</span> SLA guarantee</li>
             <li className="flex items-center gap-3"><span className="text-green-500">✓</span> Custom branding</li>
           </ul>
-          <button className="w-full py-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-2xl transition-all">
+          <button className="w-full py-4 bg-purple-600 cursor-pointer hover:bg-purple-700 text-white font-semibold rounded-2xl transition-all">
             Contact Sales
           </button>
         </div>
