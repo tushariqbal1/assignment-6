@@ -1,4 +1,19 @@
+import { useState } from 'react';
+
 function ProductCard({ product, addToCart }) {
+  const [buttonText, setButtonText] = useState("Buy Now");
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleAddToCart = () => {
+    addToCart(product);
+
+    // Button text temporarily change to "Added to Cart"
+    setButtonText("Added to Cart");
+    setIsClicked(true);
+
+
+  };
+
   return (
     <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group">
       <div className="p-8 pb-4 flex justify-between items-start">
@@ -12,7 +27,7 @@ function ProductCard({ product, addToCart }) {
 
         {product.tag && (
           <div className={`px-4 py-1 text-xs font-medium rounded-full
-      ${product.tagType === 'best-seller' ? 'bg-amber-100 text-amber-700' :
+            ${product.tagType === 'best-seller' ? 'bg-amber-100 text-amber-700' :
               product.tagType === 'popular' ? 'bg-purple-100 text-purple-700' :
                 product.tagType === 'new' ? 'bg-emerald-100 text-emerald-700' :
                   'bg-gray-100 text-gray-600'}`}>
@@ -42,10 +57,13 @@ function ProductCard({ product, addToCart }) {
         </ul>
 
         <button
-          onClick={() => addToCart(product)}
-          className="w-full bg-purple-600 hover:bg-purple-700 cursor-pointer text-white font-semibold py-4 rounded-2xl transition-all duration-200 active:scale-95"
+          onClick={handleAddToCart}
+          disabled={isClicked}
+          className="w-full bg-purple-600 hover:bg-purple-700 disabled:bg-green-600 
+                     text-white font-semibold py-4 cursor-pointer rounded-2xl transition-all duration-200 
+                     active:scale-95 hover:scale-105 hover:shadow-xl"
         >
-          Buy Now
+          {buttonText}
         </button>
       </div>
     </div>
