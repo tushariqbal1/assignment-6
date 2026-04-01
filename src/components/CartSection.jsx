@@ -1,10 +1,15 @@
+import { FaShoppingCart } from "react-icons/fa";
+
+
+
+
 function CartSection({ cart, removeFromCart, proceedToCheckout, totalPrice }) {
   return (
     <div className="max-w-3xl mx-auto">
       {cart.length === 0 ? (
-        <div className="text-center py-20">
-          <div className="text-7xl mb-4">🛒</div>
-          <h3 className="text-2xl font-semibold mb-2">Your cart is empty</h3>
+        <div className="text-center">
+          <div className="text-7xl mb-4 flex items-center justify-center"> <FaShoppingCart className="text-gray-400 text-5xl"  /> </div>
+          <h3 className="text-3xl text-gray-400 font-semibold mb-1">Your cart is empty</h3>
           <p className="text-gray-500">Add some products to get started</p>
         </div>
       ) : (
