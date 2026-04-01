@@ -2,12 +2,20 @@ function ProductCard({ product, addToCart }) {
   return (
     <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group">
       <div className="p-8 pb-4 flex justify-between items-start">
-        <div className="text-5xl">{product.icon}</div>
+        <div className="">
+          <img
+            src={product.icon}
+            alt={product.name}
+            className="w-full h-full object-contain"
+          />
+        </div>
+
         {product.tag && (
           <div className={`px-4 py-1 text-xs font-medium rounded-full
-            ${product.tagType === 'best-seller' ? 'bg-amber-100 text-amber-700' :
+      ${product.tagType === 'best-seller' ? 'bg-amber-100 text-amber-700' :
               product.tagType === 'popular' ? 'bg-purple-100 text-purple-700' :
-              product.tagType === 'new' ? 'bg-emerald-100 text-emerald-700' : 'bg-gray-100 text-gray-600'}`}>
+                product.tagType === 'new' ? 'bg-emerald-100 text-emerald-700' :
+                  'bg-gray-100 text-gray-600'}`}>
             {product.tag}
           </div>
         )}
