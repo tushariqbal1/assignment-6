@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { 
-  FaCheckCircle, 
-  FaInfoCircle, 
-  FaTrash, 
-  FaShoppingBag 
+import {
+  FaCheckCircle,
+  FaInfoCircle,
+  FaTrash,
+  FaShoppingBag
 } from "react-icons/fa";
 
 import productsData from './data/products.json';
@@ -83,7 +83,11 @@ function App() {
   };
 
   const totalItems = cart.length;
-  const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
+  // const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
+  const totalPrice = cart.reduce(
+    (sum, item) => sum + Number(item.price),
+    0
+  );
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -92,25 +96,25 @@ function App() {
       <StatsBar />
 
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <TabButtons 
-          activeTab={activeTab} 
-          setActiveTab={setActiveTab} 
-          totalItems={totalItems} 
+        <TabButtons
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          totalItems={totalItems}
         />
 
         {activeTab === 'products' && (
-          <ProductsSection 
-            products={products} 
-            addToCart={addToCart} 
+          <ProductsSection
+            products={products}
+            addToCart={addToCart}
           />
         )}
 
         {activeTab === 'cart' && (
-          <CartSection 
-            cart={cart} 
-            removeFromCart={removeFromCart} 
-            proceedToCheckout={proceedToCheckout} 
-            totalPrice={totalPrice} 
+          <CartSection
+            cart={cart}
+            removeFromCart={removeFromCart}
+            proceedToCheckout={proceedToCheckout}
+            totalPrice={totalPrice}
           />
         )}
       </div>
@@ -120,9 +124,9 @@ function App() {
       <Footer />
 
       {/* ✅ Toast Container */}
-      <ToastContainer 
-        position="top-right" 
-        autoClose={3000} 
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
         theme="light"
       />
     </div>

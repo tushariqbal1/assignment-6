@@ -25,7 +25,7 @@ function CartSection({ cart, removeFromCart, proceedToCheckout, totalPrice }) {
                 key={item.id}
                 className="flex items-center shadow-xl gap-4 bg-gray-50 p-5 rounded-xl"
               >
-              
+
                 {/* Icon */}
                 <img
                   src={item.icon}
@@ -33,7 +33,7 @@ function CartSection({ cart, removeFromCart, proceedToCheckout, totalPrice }) {
                   className="w-10 h-10 object-contain border border-[#F2F2F2] p-1 rounded-full"
                 />
 
-            
+
                 {/* Info */}
                 <div className="flex-1">
                   <h3 className="text-lg text-[#101727] font-semibold">
@@ -58,8 +58,10 @@ function CartSection({ cart, removeFromCart, proceedToCheckout, totalPrice }) {
           {/* Total Section */}
           <div className="bg-white p-6 rounded-2xl shadow-sm">
             <div className="flex justify-between text-xl font-semibold mb-4">
-              <span>Total:</span>
-              <span>${totalPrice}</span>
+              <span className="text-[#627382]">Total:</span>
+              <span className="text-2xl font-bold text-[#101727]">
+                ${totalPrice.toFixed(2)}
+              </span>
             </div>
 
             {/* Checkout Button */}
