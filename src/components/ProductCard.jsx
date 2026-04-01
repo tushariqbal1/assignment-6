@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { IoCheckmarkCircleOutline } from 'react-icons/io5';
 
 function ProductCard({ product, addToCart }) {
   const [buttonText, setButtonText] = useState("Buy Now");
@@ -50,7 +51,7 @@ function ProductCard({ product, addToCart }) {
         <ul className="space-y-3 mb-8">
           {product.features.map((feature, index) => (
             <li key={index} className="flex items-start gap-3 text-sm text-gray-700">
-              <span className="text-green-500 mt-0.5 text-lg">✓</span>
+              <span className="text-green-500 mt-0.5 text-lg"><IoCheckmarkCircleOutline /></span>
               <span>{feature}</span>
             </li>
           ))}

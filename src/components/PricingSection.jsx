@@ -1,3 +1,6 @@
+import { IoMdCheckboxOutline, IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { IoCheckmarkDone } from "react-icons/io5";
+
 function PricingSection() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-20">
@@ -16,10 +19,10 @@ function PricingSection() {
             <span className="text-gray-500">/Month</span>
           </div>
           <ul className="space-y-4 mb-10 text-gray-700">
-            <li className="flex items-center gap-3"><span className="text-green-500">✓</span> Access to 10 free tools</li>
-            <li className="flex items-center gap-3"><span className="text-green-500">✓</span> Basic templates</li>
-            <li className="flex items-center gap-3"><span className="text-green-500">✓</span> Community support</li>
-            <li className="flex items-center gap-3"><span className="text-green-500">✓</span> 1 project per month</li>
+            <li className="flex items-center gap-3"><span className="text-green-500"> <IoCheckmarkDone /> </span> Access to 10 free tools</li>
+            <li className="flex items-center gap-3"><span className="text-green-500"> <IoCheckmarkDone /> </span> Basic templates</li>
+            <li className="flex items-center gap-3"><span className="text-green-500"><IoCheckmarkDone /></span> Community support</li>
+            <li className="flex items-center gap-3"><span className="text-green-500"><IoCheckmarkDone /></span> 1 project per month</li>
           </ul>
           <button className="w-full py-4 cursor-pointer bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-2xl transition-all">
             Get Started Free
@@ -38,12 +41,12 @@ function PricingSection() {
             <span className="opacity-80">/Month</span>
           </div>
           <ul className="space-y-4 mb-10">
-            <li className="flex items-center gap-3"><span className="text-green-300">✓</span> Access to all premium tools</li>
-            <li className="flex items-center gap-3"><span className="text-green-300">✓</span> Unlimited templates</li>
-            <li className="flex items-center gap-3"><span className="text-green-300">✓</span> Priority support</li>
-            <li className="flex items-center gap-3"><span className="text-green-300">✓</span> Unlimited projects</li>
-            <li className="flex items-center gap-3"><span className="text-green-300">✓</span> Cloud sync</li>
-            <li className="flex items-center gap-3"><span className="text-green-300">✓</span> Advanced analytics</li>
+            <li className="flex items-center gap-3"><span className="text-green-300"><IoMdCheckmarkCircleOutline /></span> Access to all premium tools</li>
+            <li className="flex items-center gap-3"><span className="text-green-300"><IoMdCheckmarkCircleOutline /></span> Unlimited templates</li>
+            <li className="flex items-center gap-3"><span className="text-green-300"><IoMdCheckmarkCircleOutline /></span> Priority support</li>
+            <li className="flex items-center gap-3"><span className="text-green-300"><IoMdCheckmarkCircleOutline /></span> Unlimited projects</li>
+            <li className="flex items-center gap-3"><span className="text-green-300"><IoMdCheckmarkCircleOutline /></span> Cloud sync</li>
+            <li className="flex items-center gap-3"><span className="text-green-300"><IoMdCheckmarkCircleOutline /></span> Advanced analytics</li>
           </ul>
           <button className="w-full py-4 bg-white cursor-pointer text-purple-700 font-semibold rounded-2xl hover:bg-gray-100 transition-all">
             Start Pro Trial
@@ -59,12 +62,12 @@ function PricingSection() {
             <span className="text-gray-500">/Month</span>
           </div>
           <ul className="space-y-4 mb-10 text-gray-700">
-            <li className="flex items-center gap-3"><span className="text-green-500">✓</span> Everything in Pro</li>
-            <li className="flex items-center gap-3"><span className="text-green-500">✓</span> Team collaboration</li>
-            <li className="flex items-center gap-3"><span className="text-green-500">✓</span> Custom integrations</li>
-            <li className="flex items-center gap-3"><span className="text-green-500">✓</span> Dedicated support</li>
-            <li className="flex items-center gap-3"><span className="text-green-500">✓</span> SLA guarantee</li>
-            <li className="flex items-center gap-3"><span className="text-green-500">✓</span> Custom branding</li>
+            <li className="flex items-center gap-3"><span className="text-green-500"><IoMdCheckboxOutline /></span> Everything in Pro</li>
+            <li className="flex items-center gap-3"><span className="text-green-500"><IoMdCheckboxOutline /></span> Team collaboration</li>
+            <li className="flex items-center gap-3"><span className="text-green-500"><IoMdCheckboxOutline /></span> Custom integrations</li>
+            <li className="flex items-center gap-3"><span className="text-green-500"><IoMdCheckboxOutline /></span> Dedicated support</li>
+            <li className="flex items-center gap-3"><span className="text-green-500"><IoMdCheckboxOutline /></span> SLA guarantee</li>
+            <li className="flex items-center gap-3"><span className="text-green-500"><IoMdCheckboxOutline /></span> Custom branding</li>
           </ul>
           <button className="w-full py-4 bg-purple-600 cursor-pointer hover:bg-purple-700 text-white font-semibold rounded-2xl transition-all">
             Contact Sales
